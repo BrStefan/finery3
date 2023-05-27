@@ -15,11 +15,10 @@
 
 import { createApp } from 'vue';
 import App from './App.vue';
-import Vuetify from 'vuetify';
-import 'vuetify/dist/vuetify.min.css';
+import vuetify from './plugins/vuetify';
 
 const app = createApp(App);
 
-app.use(Vuetify);
+app.use(vuetify);
 
 app.mount('#app');

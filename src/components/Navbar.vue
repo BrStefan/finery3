@@ -31,9 +31,17 @@ export default {
     };
   },
   computed: {
-  isMobile() {
-    return this.$vuetify.breakpoint.smAndDown;
+    isMobile() {
+      return window.innerWidth <= 960; // Adjust the width threshold as needed
+    },
   },
-},
 };
 </script>
+
+<style scoped>
+@media (max-width: 960px) {
+  .v-list-item {
+    display: none;
+  }
+}
+</style>

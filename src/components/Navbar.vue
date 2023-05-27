@@ -32,7 +32,7 @@ export default {
   },
   computed: {
     isMobile() {
-      return this.$vuetify.platform.is.mobile;
+      return this.$vuetify.breakpoint.smAndDown;
     },
   },
 };

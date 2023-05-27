@@ -1,11 +1,6 @@
-import { createApp } from 'vue';
-import Vuetify from 'vuetify';
-
+import { createVuetify } from 'vuetify';
 import 'vuetify/dist/vuetify.min.css';
 
-const app = createApp();
-const vuetify = new Vuetify();
-
-app.use(vuetify);
+const vuetify = createVuetify();
 
 export default vuetify;

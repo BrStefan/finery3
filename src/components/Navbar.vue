@@ -31,9 +31,9 @@ export default {
     };
   },
   computed: {
-    isMobile() {
-      return this.$vuetify.breakpoint.smAndDown;
-    },
+  isMobile() {
+    return this.$vuetify.breakpoint.smOnly;
   },
+},
 };
 </script>
